@@ -1,0 +1,6 @@
+build/bin/
+bin/
+logs/
+config.json
+.idea/
+dist/

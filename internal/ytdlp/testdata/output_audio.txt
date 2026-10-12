@@ -1,0 +1,8 @@
+[youtube] dQw4w9WgXcQ: Downloading webpage
+[download] Destination: /out/Clip [dQw4w9WgXcQ].webm
+PROG|downloading|1000000|NA|4000000|NA|NA|251
+PROG|downloading|2000000|4000000|NA|1048576.0|2|251
+PROG|finished|4000000|4000000|NA|NA|NA|251
+[ExtractAudio] Destination: /out/Clip [dQw4w9WgXcQ].mp3
+Deleting original file /out/Clip [dQw4w9WgXcQ].webm (pass -k to keep)
+FILE|/out/Clip [dQw4w9WgXcQ].mp3

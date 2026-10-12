@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>YouTube DL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- A. Startup overlay -->
+  <div id="startup" class="overlay" role="status" aria-live="polite" hidden>
+    <div class="startup-box">
+      <div class="logo" aria-hidden="true">▶</div>
+      <h1 id="startup-title"></h1>
+      <div id="startup-spinner" class="spinner" aria-hidden="true"></div>
+      <p id="startup-line" class="startup-line"></p>
+      <div id="startup-bar" class="bar" hidden><div class="bar-fill"></div></div>
+      <div id="startup-error" class="startup-error" hidden>
+        <p id="startup-error-msg"></p>
+        <button id="startup-retry" type="button" class="btn primary"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- B. Main screen -->
+  <main id="app" class="app" hidden>
+    <div id="warnings" class="banner" role="status" hidden></div>
+
+    <section class="block">
+      <label for="url" id="url-label" class="label"></label>
+      <div class="row">
+        <input id="url" type="url" inputmode="url" autocomplete="off" spellcheck="false">
+        <button id="paste" type="button" class="btn"></button>
+      </div>
+    </section>
+
+    <section id="card" class="card" aria-live="polite" data-state="empty">
+      <div class="thumb"><img id="thumb" alt=""></div>
+      <div class="card-body">
+        <p id="card-text" class="card-msg"></p>
+        <h2 id="card-title" class="card-title"></h2>
+        <p id="card-channel" class="card-channel"></p>
+        <p id="card-meta" class="card-meta"></p>
+      </div>
+    </section>
+
+    <fieldset class="block">
+      <legend id="mode-legend" class="label"></legend>
+      <div class="segmented" id="modes" role="radiogroup"></div>
+    </fieldset>
+
+    <section class="block">
+      <label for="outdir" id="outdir-label" class="label"></label>
+      <div class="row">
+        <input id="outdir" type="text" readonly>
+        <button id="browse" type="button" class="btn"></button>
+      </div>
+    </section>
+
+    <div class="actions">
+      <button id="download" type="button" class="btn primary big"></button>
+      <button id="cancel" type="button" class="btn danger big" hidden></button>
+    </div>
+
+    <section id="status" class="status" data-state="idle" aria-live="polite" hidden>
+      <div class="status-head">
+        <span id="status-icon" class="status-icon" aria-hidden="true"></span>
+        <div class="status-text">
+          <p id="status-title" class="status-title"></p>
+          <p id="status-sub" class="status-sub"></p>
+        </div>
+      </div>
+      <div id="progress" class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><div class="bar-fill"></div></div>
+      <div id="result-actions" class="row result-actions" hidden>
+        <button id="open-folder" type="button" class="btn"></button>
+      </div>
+      <details id="detail" hidden>
+        <summary id="detail-summary"></summary>
+        <pre id="detail-text"></pre>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <span id="version"></span>
+      <button id="check-updates" type="button" class="link"></button>
+    </footer>
+  </main>
+
+  <div id="mock-panel" class="mock-panel" hidden></div>
+
+  <script src="i18n.js"></script>
+  <script src="api.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

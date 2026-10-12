@@ -1,0 +1,15 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "youtube-dl-gui",
+  "outputfilename": "youtube-dl-gui",
+  "frontend:install": "",
+  "frontend:build": "",
+  "frontend:dir": "frontend",
+  "info": {
+    "companyName": "youtube-dl-gui",
+    "productName": "YouTube DL",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright © 2026",
+    "comments": "Interface portable pour yt-dlp"
+  }
+}

@@ -1,0 +1,14 @@
+[youtube] Extracting URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+[youtube] dQw4w9WgXcQ: Downloading webpage
+[info] dQw4w9WgXcQ: Downloading 1 format(s): 401+251
+[download] Destination: /out/Clip [dQw4w9WgXcQ].f401.mp4
+PROG|downloading|0|NA|10000000|NA|NA|401
+PROG|downloading|5000000|NA|10000000|2097152.0|2|401
+PROG|downloading|10000000|10000000|NA|2097152.0|0|401
+PROG|finished|10000000|10000000|NA|NA|NA|401
+[download] Destination: /out/Clip [dQw4w9WgXcQ].f251.webm
+PROG|downloading|1000000|2000000|NA|1048576.0|1|251
+PROG|finished|2000000|2000000|NA|NA|NA|251
+[Merger] Merging formats into "/out/Clip [dQw4w9WgXcQ].mp4"
+Deleting original file /out/Clip [dQw4w9WgXcQ].f401.mp4 (pass -k to keep)
+FILE|/out/Clip [dQw4w9WgXcQ].mp4
